@@ -9,7 +9,7 @@ const Dish = ({dish}) => {
     const dispatch = useDispatch();
 
     return (<div>
-        <img src={`${dish.img}.jpeg`}/>
+        <img src={`${dish.img}.jpeg`} alt="dishImg"/>
         <h2>{dish.name}</h2>
         <p>$ {dish.price} </p>
         <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
